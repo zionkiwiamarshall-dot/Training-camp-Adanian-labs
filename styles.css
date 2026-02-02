@@ -3,18 +3,6 @@
   --blue: #0a2540;
   --light: #f5f7fa;
 }
-.header {
-  width: 100%;
-  padding: 15px 40px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: flex-end; /* logo moves to right */
-  z-index: 10;
-  background: rgba(10,37,64,0.95); /* optional: semi-transparent */
-  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
-}
 
 .logo img {
   width: 40px; /* small logo */
