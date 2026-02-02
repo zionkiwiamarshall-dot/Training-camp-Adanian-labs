@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adanian Labs | Data Science Training Program</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <h2>Adanian Labs</h2>
+    <a href="#apply" class="btn">Apply Now</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>In-House Data Science Training Program</h1>
+      <p>
+        Learn Data Science, AI & Analytics from real industry projects inside
+        <strong>Adanian Labs</strong>.
+      </p>
+      <a href="#apply" class="btn primary">Join the Program</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section">
+    <h2>About the Program</h2>
+    <p>
+      This is a hands-on, in-house training program designed to equip participants
+      with real-world Data Science skills while working with Adanian Labs teams.
+    </p>
+
+    <div class="cards">
+      <div class="card">📊 Data Analysis & Visualization</div>
+      <div class="card">🤖 Machine Learning</div>
+      <div class="card">📈 Business Intelligence</div>
+      <div class="card">🌍 Real African Use Cases</div>
+    </div>
+  </section>
+
+  <!-- REQUIREMENTS -->
+  <section class="section alt">
+    <h2>Who Should Apply?</h2>
+    <ul class="list">
+      <li>Students or recent graduates</li>
+      <li>Basic Python / SQL knowledge</li>
+      <li>Strong interest in Data & AI</li>
+      <li>Available for in-house training</li>
+    </ul>
+  </section>
+
+  <!-- APPLY -->
+  <section id="apply" class="section">
+    <h2>Apply Now</h2>
+
+    <!-- Netlify-ready form -->
+    <form name="adanian-ds-application" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="adanian-ds-application" />
+
+      <input type="text" name="name" placeholder="Full Name" required />
+      <input type="email" name="email" placeholder="Email Address" required />
+      <input type="text" name="background" placeholder="Education / Background" />
+      <textarea name="motivation" placeholder="Why do you want to join?" required></textarea>
+
+      <button type="submit" class="btn primary">Submit Application</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Adanian Labs · Building Africa’s Future</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
