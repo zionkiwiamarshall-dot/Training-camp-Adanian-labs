@@ -3,11 +3,18 @@
   --blue: #0a2540;
   --light: #f5f7fa;
 }
+.hero-logo {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 3;
+}
 
-.logo img {
-  width: 40px; /* small logo */
+.hero-logo img {
+  width: 60px; /* adjust size */
   height: auto;
 }
+
 * {
   margin: 0;
   padding: 0;
