@@ -3,7 +3,13 @@
   --blue: #0a2540;
   --light: #f5f7fa;
 }
-
+<header class="header" style="
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 20;
+">…</header>
+    
 * {
   margin: 0;
   padding: 0;
@@ -14,14 +20,6 @@
 body {
   background: white;
   color: #333;
-}
-
-.nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 40px;
-  background: var(--blue);
-  color: white;
 }
 
 .hero {
