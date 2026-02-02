@@ -57,9 +57,13 @@ body {
   max-width: 1000px;
   margin: auto;
 }
-
 .section.alt {
-  background: var(--light);
+  background:
+    linear-gradient(
+      90deg,
+      rgba(245,124,0,0.08),
+      rgba(10,37,64,0.08)
+    );
 }
 
 .cards {
@@ -170,4 +174,22 @@ footer {
   color: white;
   text-align: center;
   padding: 20px;
+}
+.hero-camel {
+  position: absolute;
+  bottom: 40px;
+  right: 60px;
+  max-width: 420px;
+  opacity: 0.95;
+}
+
+.hero-camel img {
+  width: 100%;
+}
+  .pattern-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url("assets/pattern.svg");
+  opacity: 0.05;
+  z-index: 0;
 }
