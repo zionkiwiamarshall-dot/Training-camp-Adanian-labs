@@ -26,76 +26,92 @@ body {
   background: white;
   color: #333;
 }
-
 .hero {
   position: relative;
   min-height: 100vh;
-  padding: 120px 60px;
+  padding: 80px 60px;
   display: flex;
   align-items: center;
-
   background-image:
-    linear-gradient(
-      120deg,
-      rgba(10,37,64,0.85),
-      rgba(245,124,0,0.75)
-    ),
-    url("ada camels.jpg");
-
+    linear-gradient(120deg, rgba(10,37,64,0.85), rgba(245,124,0,0.75)),
+    url("assets/camel.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(
-      circle at 30% 20%,
-      rgba(255,255,255,0.08),
-      transparent 40%
-    );
+  background: radial-gradient(circle at 30% 20%, rgba(255,255,255,0.08), transparent 40%);
   z-index: 1;
 }
 
-.section {
-  padding: 60px 40px;
-  max-width: 1000px;
-  margin: auto;
-}
-.section.alt {
-  background:
-    linear-gradient(
-      90deg,
-      rgba(245,124,0,0.08),
-      rgba(10,37,64,0.08)
-    );
+.hero-logo {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 3;
 }
 
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  margin…
-[09:09, 2/2/2026] Zion: :root {
-  --orange: #f57c00;
-  --blue: #0a2540;
-  --light: #f5f7fa;
+.hero-logo img {
+  width: 60px;
+  height: auto;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Inter, Arial, sans-serif;
+.hero-text {
+  position: relative;
+  z-index: 2;
+  max-width: 650px;
+  color: white;
 }
 
-body {
-  background: white;
-  color: #333;
+.hero-text h1 {
+  font-size: 3rem;
+  line-height: 1.15;
+  margin-bottom: 20px;
 }
 
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
 
+.hero-subtext p {
+  font-size: 1rem;
+  margin-bottom: 25px;
+  font-style: italic; /* optional */
+}
+
+.hero-text .btn.primary {
+  padding: 15px 20px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  background: #f57c00;
+  color: white;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.hero-text .btn.primary:hover {
+  background: #e06a00;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-text p, .hero-subtext p {
+    font-size: 1rem;
+  }
+
+  .hero-logo img {
+    width: 45px;
+  }
 }
 
 
